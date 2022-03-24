@@ -23,7 +23,7 @@ public class KeeperBot {
 
         builder.setCompression(Compression.NONE);
 
-        builder.setActivity(Activity.watching("Your Stats"));
+        builder.setActivity(Activity.playing("with the bot"));
 
         builder.enableIntents(GatewayIntent.GUILD_MEMBERS);
 
@@ -36,6 +36,7 @@ public class KeeperBot {
 
 
     public static void registerListenters(){
+        builder.addEventListeners(new Listener());
         builder.addEventListeners(new Commands());
     }
 
