@@ -1,4 +1,4 @@
-package me.keeper.Commands;
+package me.keeper.Command;
 
 public class Conversions{
 
