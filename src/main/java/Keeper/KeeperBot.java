@@ -9,7 +9,7 @@ import net.dv8tion.jda.api.utils.cache.CacheFlag;
 
 import javax.security.auth.login.LoginException;
 
-public class SBBot {
+public class KeeperBot {
 
     public static JDABuilder builder;
 

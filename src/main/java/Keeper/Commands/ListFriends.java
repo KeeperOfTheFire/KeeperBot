@@ -2,7 +2,7 @@ package Keeper.Commands;
 
 
 import Keeper.Config;
-import Keeper.SBBot;
+import Keeper.KeeperBot;
 import java.util.UUID;
 
 public class ListFriends {
