@@ -1,8 +1,6 @@
-package Keeper;
+package me.keeper;
 
 import io.github.cdimascio.dotenv.Dotenv;
-
-import java.util.Locale;
 
 public class Config {
 

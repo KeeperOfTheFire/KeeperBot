@@ -3,6 +3,7 @@ plugins {
     id 'application'
 }
 
+mainClassName = 'me.keeper.KeeperBot'
 version '1.0'
 
 repositories {

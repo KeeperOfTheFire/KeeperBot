@@ -1,6 +1,6 @@
-package Keeper;
+package me.keeper;
 
-import Keeper.Listeners.Commands;
+import me.keeper.Listeners.Commands;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.requests.GatewayIntent;

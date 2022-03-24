@@ -1,9 +1,7 @@
-package Keeper.Commands;
+package me.keeper.Commands;
 
 
-import Keeper.Config;
-import Keeper.KeeperBot;
-import java.util.UUID;
+import me.keeper.Config;
 
 public class ListFriends {
     private String ign;

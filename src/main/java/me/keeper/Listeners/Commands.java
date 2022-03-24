@@ -1,6 +1,6 @@
-package Keeper.Listeners;
+package me.keeper.Listeners;
 
-import Keeper.Commands.Conversions;
+import me.keeper.Commands.Conversions;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.jetbrains.annotations.NotNull;
