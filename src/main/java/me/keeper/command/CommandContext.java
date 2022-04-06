@@ -1,4 +1,4 @@
-package me.keeper.Command;
+package me.keeper.command;
 
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;

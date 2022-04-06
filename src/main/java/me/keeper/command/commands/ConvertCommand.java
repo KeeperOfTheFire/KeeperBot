@@ -1,13 +1,14 @@
-package me.keeper.Command.Commands;
+package me.keeper.command.commands;
 
-import me.keeper.Command.CommandContext;
-import me.keeper.Command.ICommand;
+import me.keeper.command.CommandContext;
+import me.keeper.command.ICommand;
 import me.keeper.Config;
 
 import java.util.List;
 
 public class ConvertCommand implements ICommand {
 
+    @SuppressWarnings("SpellCheckingInspection")
     private static final String LONG_STRING = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefjhijklmnopqrstuvwxyz_";
 
     @Override
@@ -34,7 +35,8 @@ public class ConvertCommand implements ICommand {
 
     @Override
     public String getHelp() {
-        return "converts between binary and any base up to 63";
+        return "converts between binary and any base up to 63\n" +
+                "Usage: " + Config.get("prefix") +"convert <starting base> <ending base> <number to convert>\n";
     }
 
     public static String base10ToBaseN(String numToConvert, int base){

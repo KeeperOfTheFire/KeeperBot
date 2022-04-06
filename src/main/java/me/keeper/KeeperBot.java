@@ -26,7 +26,7 @@ public class KeeperBot {
 
         builder.enableIntents(GatewayIntent.GUILD_MEMBERS);
 
-        registerListenters();
+        registerListeners();
 
         builder.build();
 
@@ -34,7 +34,7 @@ public class KeeperBot {
 
 
 
-    public static void registerListenters(){
+    public static void registerListeners(){
         builder.addEventListeners(new Listener());
     }
 

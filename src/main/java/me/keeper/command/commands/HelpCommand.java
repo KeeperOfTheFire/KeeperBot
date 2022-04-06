@@ -1,7 +1,7 @@
-package me.keeper.Command.Commands;
+package me.keeper.command.commands;
 
-import me.keeper.Command.CommandContext;
-import me.keeper.Command.ICommand;
+import me.keeper.command.CommandContext;
+import me.keeper.command.ICommand;
 import me.keeper.CommandManager;
 import me.keeper.Config;
 import net.dv8tion.jda.api.entities.TextChannel;

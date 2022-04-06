@@ -1,4 +1,4 @@
-package me.keeper.Command;
+package me.keeper.command;
 
 import java.util.Arrays;
 import java.util.List;

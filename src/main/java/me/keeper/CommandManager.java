@@ -1,12 +1,12 @@
 package me.keeper;
 
-import me.keeper.Command.CommandContext;
-import me.keeper.Command.Commands.ConvertCommand;
-import me.keeper.Command.Commands.HelpCommand;
-import me.keeper.Command.Commands.PingCommand;
-import me.keeper.Command.ICommand;
+import me.keeper.command.CommandContext;
+import me.keeper.command.commands.ConvertCommand;
+import me.keeper.command.commands.HelpCommand;
+import me.keeper.command.commands.MinecraftCommand;
+import me.keeper.command.commands.PingCommand;
+import me.keeper.command.ICommand;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,6 +20,7 @@ public class CommandManager {
         addCommand(new HelpCommand(this));
         addCommand(new PingCommand());
         addCommand(new ConvertCommand());
+        addCommand(new MinecraftCommand());
     }
 
     private void addCommand(ICommand cmd){

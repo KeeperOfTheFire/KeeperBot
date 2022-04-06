@@ -1,7 +1,8 @@
-package me.keeper.Command.Commands;
+package me.keeper.command.commands;
 
-import me.keeper.Command.CommandContext;
-import me.keeper.Command.ICommand;
+import me.keeper.Config;
+import me.keeper.command.CommandContext;
+import me.keeper.command.ICommand;
 import net.dv8tion.jda.api.JDA;
 
 public class PingCommand implements ICommand {
@@ -21,6 +22,7 @@ public class PingCommand implements ICommand {
 
     @Override
     public String getHelp() {
-        return "sends the ping of the user";
+        return "sends the ping of the user\n" +
+                "Usage: " + Config.get("prefix") + "ping";
     }
 }
