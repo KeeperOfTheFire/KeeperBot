@@ -5,7 +5,7 @@ import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 
 import java.util.List;
 
-public class CommandContext {
+public class CommandContext{
     private final MessageReceivedEvent event;
     private final List<String> args;
 

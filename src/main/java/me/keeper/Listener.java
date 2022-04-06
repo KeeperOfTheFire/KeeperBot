@@ -29,10 +29,10 @@ public class Listener extends ListenerAdapter {
         String prefix = Config.get("prefix");
         String raw = event.getMessage().getContentRaw();
 
-        if(raw.equalsIgnoreCase(prefix + "shutdown") && event.getAuthor().getId().equals(Config.get("OWNER_ID"))){
+        if(raw.equalsIgnoreCase(prefix + "shutdown")
+                && user.getId().equals(Config.get("OWNER_ID"))){
             LOGGER.info("Shutting Down");
             event.getJDA().shutdown();
-
             return;
         }
 
