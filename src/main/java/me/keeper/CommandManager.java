@@ -1,12 +1,10 @@
 package me.keeper;
 
 import me.keeper.command.CommandContext;
-import me.keeper.command.commands.ConvertCommand;
-import me.keeper.command.commands.HelpCommand;
-import me.keeper.command.commands.MinecraftCommand;
-import me.keeper.command.commands.PingCommand;
+import me.keeper.command.commands.*;
 import me.keeper.command.ICommand;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
+
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,6 +19,7 @@ public class CommandManager {
         addCommand(new PingCommand());
         addCommand(new ConvertCommand());
         addCommand(new MinecraftCommand());
+        addCommand(new HypixelCommand());
     }
 
     private void addCommand(ICommand cmd){

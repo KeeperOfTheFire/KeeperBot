@@ -16,6 +16,11 @@ repositories {
         name 'jfrog-duncte123'
         url 'https://duncte123.jfrog.io/artifactory/maven'
     }
+
+    maven {
+        name 'Hypixel'
+        url 'https://repo.hypixel.net/repository/Hypixel/'
+    }
 }
 
 dependencies {
